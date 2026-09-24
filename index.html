@@ -53,6 +53,38 @@
 
       <section class="ticker" aria-label="Community highlights"><div class="ticker-track"><span>ON THE AIR</span><i>✦</i><span>ACROSS THE UK</span><i>✦</i><span>LEARN · LISTEN · TRANSMIT</span><i>✦</i><span>ON THE AIR</span><i>✦</i><span>ACROSS THE UK</span></div></section>
 
+      <section class="section-wrap live-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Live feed</p>
+            <h2>Current radio<br /><em>conditions.</em></h2>
+          </div>
+          <p class="section-note">Powered by public amateur radio APIs.</p>
+        </div>
+
+        <div class="live-grid">
+          <article class="live-card">
+            <span class="live-kicker">SIGNAL LOOKUP</span>
+            <h3>Callsign locator</h3>
+            <p id="callsign-data">Loading…</p>
+          </article>
+
+          <article class="live-card">
+            <span class="live-kicker">WSPR</span>
+            <h3>Recent reports</h3>
+            <p id="wspr-data">Loading…</p>
+          </article>
+
+          <article class="live-card">
+            <span class="live-kicker">PROPAGATION</span>
+            <h3>Band snapshot</h3>
+            <p id="band-data">Loading…</p>
+          </article>
+        </div>
+
+        <p class="api-status" id="api-status">Checking live amateur radio data…</p>
+      </section>
+
       <section class="section-wrap intro-grid" id="discover">
         <div><p class="eyebrow">01 / Why radio?</p><h2>There’s a whole world<br />on the other <em>side.</em></h2></div>
         <div class="intro-text"><p>Amateur radio is a licence to explore. Talk to someone across town, across the country, or across the world — using skill, curiosity and a little bit of kit.</p><a class="arrow-link" href="#learn">What is amateur radio? <span>↗</span></a></div>
